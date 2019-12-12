@@ -1,6 +1,7 @@
 package chapter1.strategy.ducks;
 
 import chapter1.strategy.ducks.implementClasses.FlyRocketPowered;
+import chapter1.strategy.ducks.implementClasses.FlyWithWings;
 
 public class MiniDuckSimulator {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class MiniDuckSimulator {
         OwnModelDuck ownModelDuck = new OwnModelDuck();
         ownModelDuck.quackBehavior.quack();
         ownModelDuck.flyBehavior.fly();
-        ownModelDuck.setFlyBehavior(new FlyRocketPowered());
+        ownModelDuck.setFlyBehavior(new FlyWithWings());
         ownModelDuck.flyBehavior.fly();
     }
 }

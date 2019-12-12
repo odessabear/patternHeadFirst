@@ -12,6 +12,7 @@ public class CharacterMain {
         System.out.println("-------------------------------------");
 
         Character character2 = new Troll();
+        character2.setWeapon(new AxeBehavior());
         character2.fight();
         character2.weaponChoice();
         System.out.println();

@@ -8,7 +8,6 @@ public class WeatherData extends Observable {
     private float pressure;
 
     public WeatherData() {
-
     }
 
     public void measurementsChanged() {
