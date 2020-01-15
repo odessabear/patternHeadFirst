@@ -1,6 +1,7 @@
 package chapter2.observer.swing;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -16,6 +17,11 @@ public class SwingObserverExample {
         JButton button = new JButton("Should I do it?");
         button.addActionListener(new AngelListener());
         button.addActionListener(new DevilListener());
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(BorderLayout.CENTER,button);
+        frame.setSize(300,300);
+        frame.setVisible(true);
     }
 
     class AngelListener implements ActionListener{
